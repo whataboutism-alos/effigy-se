@@ -27,8 +27,8 @@
 		/obj/item/clothing/neck/mantle/bsmantle,
 		/obj/item/clothing/under/rank/blueshield,
 		/obj/item/clothing/under/rank/blueshield/skirt,
-		/obj/item/clothing/under/rank/blueshield/turtleneck,
-		/obj/item/clothing/under/rank/blueshield/turtleneck/skirt,
+		/obj/item/clothing/under/rank/blueshield/turtleneck, // this sprite could probably be reimplemented as some type of coroner garb given the dark colors. just slight tweaking to med blue on the shoulders?
+		/obj/item/clothing/under/rank/blueshield/turtleneck/skirt, // ditto on reimplementation
 		/// NT Representative (can't we repurpose these for HOP or something? green fits hop being technically the service dept head)
 		/obj/item/clothing/head/hats/intern/developer, // ????? What is the point of this one // looks like they wanted a more informal name on the parent item. we can probably just delete this
 		/obj/item/clothing/under/rank/nanotrasen_consultant,
@@ -36,7 +36,7 @@
 
 		//Engineering
 		/// Chief Engineer
-		/obj/item/clothing/head/beret/engi/ce,
+
 		/// Engineer
 		/obj/item/clothing/glasses/hud/eyepatch/meson/blindfold,
 		/// Atmospheric Technician
@@ -45,32 +45,23 @@
 
 		// Medical
 		/// Chief Medical Officer
-		/obj/item/clothing/head/beret/medical/cmo/alt,
+
 		/// Doctor
 		/obj/item/clothing/glasses/hud/eyepatch/med/blindfold,
 
 		// Science
 		/// Research Director
-		/obj/item/clothing/head/beret/science/rd/alt,
+
 		/// Scientist
-		/obj/item/clothing/head/beret/science/fancy,
 		/obj/item/clothing/glasses/hud/eyepatch/diagnostic/blindfold,
 		/obj/item/clothing/glasses/hud/eyepatch/sci/blindfold,
 
 		// Service
 		/// Head of Personnel
-		/obj/item/clothing/head/hopcap/beret,
-		/obj/item/clothing/head/hopcap/beret/alt,
 		/obj/item/clothing/suit/toggle/hop_parade,
 		/obj/item/clothing/suit/armor/vest/capcarapace/jacket,
-		/obj/item/clothing/suit/toggle/labcoat/effigy/rd,
-		/obj/item/clothing/under/rank/civilian/head_of_personnel/skyrat/parade,
-		/obj/item/clothing/under/rank/civilian/head_of_personnel/skyrat/parade/female,
-		/obj/item/clothing/under/rank/civilian/head_of_personnel/skyrat/turtleneck,
-		/obj/item/clothing/under/rank/civilian/head_of_personnel/skyrat/turtleneck/skirt,
 		/// Chaplain
-		/obj/item/storage/backpack/satchel/crusader,
-		/obj/item/storage/belt/crusader,
+		/obj/item/storage/backpack/satchel/crusader, // could this be implemented as a unique chaplain department satchel so it spawns if a pref file has that preferred bag type?
 
 		// Security
 		/// Head of Security
@@ -86,7 +77,6 @@
 		/obj/item/clothing/under/rank/security/head_of_security/peacekeeper/sol,
 		/obj/item/clothing/suit/cowboyvest, // Why is this a dupe of the one the det gets
 		/obj/item/clothing/suit/toggle/jacket/sec/old, // BlueSec leftover
-		/obj/item/storage/belt/holster/cowboy,
 
 		// Enclave //can we use this stuff in a bitrunner thing? shooting enclave soldiers could be fun
 		/obj/item/clothing/gloves/military, // GAMER GEAR GAMER GEAR

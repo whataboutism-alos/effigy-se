@@ -71,3 +71,14 @@ GLOBAL_LIST_INIT(loadout_belts, generate_loadout_items(/datum/loadout_item/belts
 /datum/loadout_item/belts/candle_box
 	name = "Candle Box"
 	item_path = /obj/item/storage/fancy/candle_box
+
+/datum/loadout_item/belts/belt_crusader
+	name = "Crusader Belt"
+	item_path = /obj/item/storage/belt/crusader
+	restricted_roles = list(JOB_CHAPLAIN, JOB_CURATOR)
+
+/datum/loadout_item/belts/belt/holster/cowboy
+	name = "Cowboy Holster"
+	item_path = /obj/item/storage/belt/holster/cowboy
+	\restricted_roles = list(JOB_HEAD_OF_SECURITY, JOB_SECURITY_OFFICER, JOB_WARDEN, JOB_DETECTIVE)
+

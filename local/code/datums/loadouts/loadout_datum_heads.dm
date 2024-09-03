@@ -197,78 +197,136 @@ GLOBAL_LIST_INIT(loadout_helmets, generate_loadout_items(/datum/loadout_item/hea
  *	BERETS
  */
 
-/datum/loadout_item/head/greyscale_beret
-	name = "Greyscale Beret"
+/datum/loadout_item/head/beret/recolorable
+	name = "Recolorable Beret"
 	item_path = /obj/item/clothing/head/beret
 
-/datum/loadout_item/head/greyscale_beret/badge
-	name = "Greyscale Beret with Badge"
+/datum/loadout_item/head/beret/recolorable/badge
+	name = "Recolorable Badged Beret"
 	item_path = /obj/item/clothing/head/beret/badge
 
-/datum/loadout_item/head/atmos_beret
+/datum/loadout_item/head/engi_beret/ce
+	name = "Engineering Chief Beret, White"
+	item_path = /obj/item/clothing/head/beret/engi/ce
+	restricted_roles = list(JOB_CHIEF_ENGINEER)
+
+/datum/loadout_item/head/beret_atmos
 	name = "Atmospherics Beret"
 	item_path = /obj/item/clothing/head/beret/atmos
 	restricted_roles = list(JOB_CHIEF_ENGINEER, JOB_ATMOSPHERIC_TECHNICIAN)
 
-/datum/loadout_item/head/engi_beret
+/datum/loadout_item/head/beret_engi
 	name = "Engineering Beret"
 	item_path = /obj/item/clothing/head/beret/engi
 	restricted_roles = list(JOB_CHIEF_ENGINEER, JOB_STATION_ENGINEER, JOB_ATMOSPHERIC_TECHNICIAN)
 
-/datum/loadout_item/head/cargo_beret
-	name = "Supply Beret"
+/datum/loadout_item/head/beret_cargo/qm/white
+	name = "Quartermaster Beret, White"
+	item_path = /obj/item/clothing/head/beret/cargo/qm/alt
+	restricted_roles = list(JOB_QUARTERMASTER)
+
+/datum/loadout_item/head/beret_cargo/qm
+	name = "Quartermaster Beret, Dept."
+	item_path = /obj/item/clothing/head/beret/cargo/qm
+	restricted_roles = list(JOB_QUARTERMASTER)
+
+/datum/loadout_item/head/beret_cargo
+	name = "Cargo Beret"
 	item_path = /obj/item/clothing/head/beret/cargo
 	restricted_roles = list(JOB_QUARTERMASTER, JOB_CARGO_TECHNICIAN, JOB_SHAFT_MINER, JOB_BITRUNNER)
+
+/datum/loadout_item/head/beret_med/cmo/white
+	name = "Medical Chief Beret, White"
+	item_path = /obj/item/clothing/head/beret/medical/cmo/alt
+	restricted_roles = list(JOB_CHIEF_MEDICAL_OFFICER)
+
+/datum/loadout_item/head/beret_med/cmo
+	name = "Medical Chief Beret, Dept."
+	item_path = /obj/item/clothing/head/beret/medical/cmo/alt
+	restricted_roles = list(JOB_CHIEF_MEDICAL_OFFICER)
 
 /datum/loadout_item/head/beret_med
 	name = "Medical Beret"
 	item_path = /obj/item/clothing/head/beret/medical
 	restricted_roles = list(JOB_CHIEF_MEDICAL_OFFICER, JOB_MEDICAL_DOCTOR, JOB_PARAMEDIC, JOB_CHEMIST, JOB_CORONER)
 
-/datum/loadout_item/head/beret_paramedic
+/datum/loadout_item/head/beret_med/paramed
 	name = "Paramedic Beret"
 	item_path = /obj/item/clothing/head/beret/medical/paramedic
 	restricted_roles = list(JOB_CHIEF_MEDICAL_OFFICER, JOB_PARAMEDIC)
 
-/datum/loadout_item/head/beret_viro
+/datum/loadout_item/head/beret_med/viro
 	name = "Virology Beret"
 	item_path = /obj/item/clothing/head/beret/medical/virologist
 	restricted_roles = list(JOB_CHIEF_MEDICAL_OFFICER, JOB_MEDICAL_DOCTOR, JOB_PARAMEDIC, JOB_CHEMIST, JOB_CORONER)
 
-/datum/loadout_item/head/beret_chem
+/datum/loadout_item/head/beret_med/chem
 	name = "Chemistry Beret"
 	item_path = /obj/item/clothing/head/beret/medical/chemist
 	restricted_roles = list(JOB_CHIEF_MEDICAL_OFFICER, JOB_CHEMIST)
+
+/datum/loadout_item/head/beret_sci/rd/white
+	name = "Science Chief Beret, White"
+	item_path = /obj/item/clothing/head/beret/science/rd/alt
+	restricted_roles = list(JOB_RESEARCH_DIRECTOR)
+
+/datum/loadout_item/head/beret_sci/rd
+	name = "Research Director Beret, Dept."
+	item_path = /obj/item/clothing/head/beret/science/rd
+	restricted_roles = list(JOB_RESEARCH_DIRECTOR)
 
 /datum/loadout_item/head/beret_sci
 	name = "Science Beret"
 	item_path = /obj/item/clothing/head/beret/science
 	restricted_roles = list(JOB_RESEARCH_DIRECTOR, JOB_SCIENTIST, JOB_ROBOTICIST, JOB_GENETICIST)
 
-/datum/loadout_item/head/beret_robo
-	name = "Robotics Beret"
+/datum/loadout_item/head/beret_sci
+	name = "Science Badged Beret"
+	item_path = /obj/item/clothing/head/beret/science/fancy
+	restricted_roles = list(JOB_RESEARCH_DIRECTOR, JOB_SCIENTIST, JOB_ROBOTICIST, JOB_GENETICIST)
+
+/datum/loadout_item/head/beret_sci/robo
+	name = "Robotics Badged Beret"
 	item_path = /obj/item/clothing/head/beret/science/fancy/robo
 	restricted_roles = list(JOB_RESEARCH_DIRECTOR, JOB_ROBOTICIST)
 
-/datum/loadout_item/head/beret_qm
-	name = "Quartermaster Beret"
-	item_path = /obj/item/clothing/head/beret/cargo/qm
-	restricted_roles = list(JOB_QUARTERMASTER)
+/datum/loadout_item/head/beret_captain
+	name = "Captaincy Beret, White"
+	item_path = /obj/item/clothing/head/caphat/beret/alt
+	restricted_roles = list(JOB_CAPTAIN)
 
-/datum/loadout_item/head/beret_qm_alt
-	name = "Quartermaster Beret, White"
-	item_path = /obj/item/clothing/head/beret/cargo/qm/alt
-	restricted_roles = list(JOB_QUARTERMASTER)
+/datum/loadout_item/head/beret_captain
+	name = "Captaincy Beret, Dept."
+	item_path = /obj/item/clothing/head/caphat/beret
+	restricted_roles = list(JOB_CAPTAIN)
 
-/datum/loadout_item/head/navyblueofficerberet
-	name = "Security Naval Beret"
-	item_path = /obj/item/clothing/head/beret/sec/navyofficer
-	restricted_roles = list(JOB_HEAD_OF_SECURITY, JOB_SECURITY_OFFICER, JOB_WARDEN)
+/datum/loadout_item/head/beret_hop
+	name = "Personnel Beret, White"
+	item_path = /obj/item/clothing/head/hopcap/beret/alt
+	restricted_roles = list(JOB_HEAD_OF_PERSONNEL)
 
-/datum/loadout_item/head/navybluewardenberet
-	name = "Warden's Naval beret"
+/datum/loadout_item/head/beret_hop
+	name = "Personnel Beret, Dept."
+	item_path = /obj/item/clothing/head/hopcap/beret
+	restricted_roles = list(JOB_HEAD_OF_PERSONNEL)
+
+/datum/loadout_item/head/beret_sec/hos
+	name = "Security Head Beret"
+	item_path = /obj/item/clothing/head/beret/sec/navywarden
+	restricted_roles = list(JOB_HEAD_OF_SECURITY)
+
+/obj/item/clothing/head/hats/hos/beret
+/datum/loadout_item/head/beret_sec/warden/navy
+	name = "Warden Naval Beret"
 	item_path = /obj/item/clothing/head/beret/sec/navywarden
 	restricted_roles = list(JOB_WARDEN)
+
+/datum/loadout_item/head/beret_sec/navy
+	name = "Security Naval Beret"
+	item_path = /obj/item/clothing/head/beret/sec/navyofficer
+	restricted_roles = list(JOB_HEAD_OF_SECURITY, JOB_WARDEN, JOB_SECURITY_OFFICER)
+
+
 
 /*
  *	FEDORAS

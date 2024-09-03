@@ -410,16 +410,16 @@ GLOBAL_LIST_INIT(loadout_exosuits, generate_loadout_items(/datum/loadout_item/su
 	name = "Labcoat"
 	item_path = /obj/item/clothing/suit/toggle/labcoat
 
-/datum/loadout_item/suit/labcoat_green
+/datum/loadout_item/suit/labcoat/green
 	name = "Green Labcoat"
 	item_path = /obj/item/clothing/suit/toggle/labcoat/mad
 
-/datum/loadout_item/suit/labcoat_highvis
+/datum/loadout_item/suit/labcoat/highvis
 	name = "High-Vis Labcoat"
 	item_path = /obj/item/clothing/suit/toggle/labcoat/effigy/highvis
 	restricted_roles = list(JOB_CHIEF_MEDICAL_OFFICER, JOB_MEDICAL_DOCTOR, JOB_CHEMIST, JOB_PARAMEDIC, JOB_CHIEF_ENGINEER, JOB_STATION_ENGINEER, JOB_ATMOSPHERIC_TECHNICIAN)
 
-/datum/loadout_item/suit/labcoat/virology
+/datum/loadout_item/suit/labcoat/med/virology
 	name = "Virology Labcoat"
 	item_path = /obj/item/clothing/suit/toggle/labcoat/virologist
 	restricted_roles = list(JOB_CHIEF_MEDICAL_OFFICER, JOB_MEDICAL_DOCTOR, JOB_CHEMIST, JOB_PARAMEDIC, JOB_CORONER)
@@ -428,6 +428,16 @@ GLOBAL_LIST_INIT(loadout_exosuits, generate_loadout_items(/datum/loadout_item/su
 	name = "Interdyne Labcoat"
 	item_path = /obj/item/clothing/suit/toggle/labcoat/interdyne
 	restricted_roles = list(JOB_CHIEF_MEDICAL_OFFICER, JOB_MEDICAL_DOCTOR, JOB_CHEMIST, JOB_PARAMEDIC, JOB_CORONER, JOB_RESEARCH_DIRECTOR, JOB_SCIENTIST, JOB_ROBOTICIST)
+
+/datum/loadout_item/suit/labcoat/sci/rd/white
+	name = "Research Director Labcoat, White"
+	item_path = /obj/item/clothing/suit/toggle/labcoat/effigy/rd
+	restricted_roles = list(JOB_RESEARCH_DIRECTOR)
+
+/datum/loadout_item/suit/labcoat/sci/rd
+	name = "Research Director Labcoat, Dept."
+	item_path = /obj/item/clothing/suit/toggle/labcoat/research_director
+	restricted_roles = list(JOB_RESEARCH_DIRECTOR)
 
 /*
  *	PONCHOS

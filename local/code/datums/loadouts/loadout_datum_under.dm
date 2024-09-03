@@ -663,6 +663,26 @@ GLOBAL_LIST_INIT(loadout_miscunders, generate_loadout_items(/datum/loadout_item/
 	item_path = /obj/item/clothing/under/rank/captain/skyrat/kilt
 	restricted_roles = list(JOB_CAPTAIN)
 
+/datum/loadout_item/under/formal/parade/hop
+	name = "Head of Personnel's Formal Uniform, Male"
+	item_path = /obj/item/clothing/under/rank/civilian/head_of_personnel/skyrat/parade
+	restricted_roles = list(JOB_HEAD_OF_PERSONNEL)
+
+/datum/loadout_item/under/formal/parade/hop/female
+	name = "Head of Personnel's Formal Uniform, Female"
+	item_path = /obj/item/clothing/under/rank/civilian/head_of_personnel/skyrat/parade/female
+	restricted_roles = list(JOB_HEAD_OF_PERSONNEL)
+
+/datum/loadout_item/under/formal/turtleneck/hop
+	name = "Head of Personnel's Turtleneck"
+	item_path = /obj/item/clothing/under/rank/civilian/head_of_personnel/skyrat/turtleneck
+	restricted_roles = list(JOB_HEAD_OF_PERSONNEL)
+
+/datum/loadout_item/under/formal/skirtleneck/hop
+	name = "Head of Personnel's Skirtleneck"
+	item_path = /obj/item/clothing/under/rank/civilian/head_of_personnel/skyrat/turtleneck/skirt
+	restricted_roles = list(JOB_HEAD_OF_PERSONNEL)
+
 /datum/loadout_item/under/formal/sailor
 	name = "Sailor Suit"
 	item_path = /obj/item/clothing/under/costume/sailor
